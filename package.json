@@ -25,6 +25,7 @@
     "fake-merkle-patricia-tree": "^1.0.1",
     "heap": "^0.2.6",
     "merkle-patricia-tree": "^2.1.2",
+    "mongoose": "^4.6.3",
     "seedrandom": "^2.4.2",
     "shelljs": "^0.6.0",
     "solc": "^0.4.2",
