@@ -16,6 +16,8 @@ yargs
 
 var argv = yargs.argv;
 
+console.log(argv);
+
 function parseAccounts(accounts) {
   function splitAccount(account) {
     account = account.split(',')
@@ -55,7 +57,7 @@ var options = {
   blocktime: argv.b || argv.blocktime,
   gasPrice: argv.g || argv.gasPrice,
   gasLimit: argv.l || argv.gasLimit,
-  useMongo: true,
+  useMongo: argv.useMongo,
   accounts: parseAccounts(argv.account),
   unlocked_accounts: argv.unlock,
   fork: argv.f || argv.fork || false,
