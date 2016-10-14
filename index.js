@@ -1,12 +1,12 @@
 var Interface = require('./lib/interface.js');
 
 var TestRPC = {
-  server: function(options) {
-    return Interface.server(options);
+  server: function(options, callback) {
+    return Interface.server(options, callback);
   },
 
-  provider: function(options) {
-    return Interface.provider(options);
+  provider: function(options, callback) {
+    return Interface.provider(options, callback);
   }
 }
 
